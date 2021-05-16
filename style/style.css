@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'PressStart2P';
+    src: url(font/PressStart2P-Regular.ttf);
+}
+
+@font-face {
     font-family: 'Roboto';
     src: url(font/Roboto-Regular-webfont.ttf);
 }
@@ -103,8 +108,13 @@ body {
     padding-right: 8vh;
 }
 
+.message-list {
+    font-family: 'PressStart2P';
+}
+
 .message.-left {
     display: flex;
+    justify-content: flex-start;
 }
 
 .message.-right {
@@ -112,14 +122,26 @@ body {
     justify-content: flex-end;
 }
 
-.messageBallons {
+.messageLBallons {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 3.5vh;
 }
 
-.messageBallons>div {
-    margin-right: 3vh;
-    margin-left: 3vh;
+.messageRBallons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-right: 3.5vh;
+}
+
+.messageLBallons>div {
+    margin-bottom: 5vh;
+}
+
+.messageRBallons>div {
     margin-bottom: 5vh;
 }
