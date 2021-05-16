@@ -16,15 +16,17 @@
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script.js"></script> 
 </head>
 
 <body>
 
     <div id="banner">
-        <div id="bannerImg">
-            <img src="style/img/Martin.png" />
-            <img src="style/img/jeanne.png" />
+        <div id="bannerImgs">
+            <img class="bannerImg" src="style/img/Martin.png" />
+            <img class="bannerImg" src="style/img/jeanne.png" />
         </div>
+        
         <div id="bannerButtons">
             <a class="nes-btn is-error" href="#">Home</a>
             <a class="nes-btn is-success" href="#">Project</a>
@@ -32,22 +34,6 @@
             <a class="nes-btn is-warning" href="#">Contact</a>
         </div>
     </div>
-
-    <script>
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("banner").style.height = "10vh";
-                document.getElementById("page").style.filter = "blur(0px)";
-                
-            } else {
-                document.getElementById("banner").style.height = "45vh";
-                document.getElementById("page").style.filter = "blur(4px)";
-            }
-        }
-    </script>
 
     <div id="page">
         <p>It's me, Mario !</p>

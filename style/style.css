@@ -17,11 +17,6 @@ body {
     margin-top: 11vh;
 }
 
-img {
-    width: 70%;
-    height: auto;
-}
-
 #banner {
     z-index: 2;
     width: 100%;
@@ -38,10 +33,16 @@ img {
     transition: 0.4s;
 }
 
-#bannerImg {
+#bannerImgs {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bannerImg {
+    width: 70%;
+    height: auto;
+    transition: 0.4s;
 }
 
 #bannerButtons {
@@ -49,6 +50,7 @@ img {
     display: flex;
     justify-content: space-between;
     font-family: 'A Goblin Appears!';
+    transition: 0.4s;
 }
 
 #page {
