@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <title>Martin - Portfolio</title>
-    <meta name="description" content="Martin Jeanne portfolio">
+    <meta name="description" content="Martin Jeanne's portfolio !">
 
     <!-- Foomantic & Jquery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
@@ -16,7 +16,6 @@
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -28,11 +27,11 @@
         </div>
 
         <div id="navbar">
-            <img id="NBImg" src="style/img/martin jeanne.png" />
-            <div id="blanckNB" style="transition: 1.5s; text-align: center;"></div>
+            <img id="NBImg" onclick="scrollToTop();" src="style/img/martin jeanne.png" />
+            <div id="blanckNB"></div>
             <div id="bannerButtons">
                 <a class="nes-btn is-error" href="#">Home</a>
-                <a class="nes-btn is-success" href="#">Project</a>
+                <a class="nes-btn is-success" href="#">Projects</a>
                 <a class="nes-btn is-primary" href="#">About</a>
                 <a class="nes-btn is-warning" href="#">Contact</a>
             </div>
@@ -40,11 +39,50 @@
     </div>
 
     <div id="page">
-        <h2 style="text-decoration: underline;">Weclome on my portfolio !</h2>
-        <p>Lorem ipsum dolor sit amet. Quo quasi consequatur ad temporibus exercitationem eos odit repellat aut
-            excepturi quia quo praesentium pariatur eum atque nihil. At provident tempora non aspernatur excepturi sed
-            nulla dolorum a expedita voluptas. Quo animi beatae eos facilis minima et quos sint in quia voluptatem sed
-            suscipit voluptate ut quis consequuntur quo sint ducimus.</p>
+        <!-- Balloon 'is-dark'  -->
+        <section id="homeDialog" class="nes-container is-dark">
+            <section class="message-list">
+                <section class="message -left">
+                    <i class="nes-bcrikko"></i>
+                    <!-- Balloon -->
+                    <div class="messageBallons">
+                        <div class="nes-balloon from-left is-dark">
+                            <p>Hi, I'm Martin ! <br>
+                                I'm 21 years old, and i love a lot of things about informatic.<br>
+                                My favorite are : programming, graphisme, hardware, and hacking (ethic, for sure).</p>
+                        </div>
+                        <div class="nes-balloon from-left is-dark">
+                            <p>This my portfolio, welcome !</p>
+                        </div>
+                        <div class="nes-balloon from-left is-dark">
+                            <p>What do you desire ?<br>
+                                "See your <span class="ui green text">projects</span>"<br>
+                                "Show information <span class="ui blue text">about</span> you !"<br>
+                                "I want to <span class="ui yellow text">contact</span> you"<br>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="message -right">
+                    <!-- Balloon -->
+                    <div class="messageBallons">
+                        <div class="nes-balloon from-right is-dark">
+                            <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                        </div>
+                        <div class="nes-balloon from-right is-dark">
+                            <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                        </div>
+                    </div>
+                    <i class="nes-bcrikko"></i>
+                </section>
+            </section>
+            <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
+                <input type="text" id="dark_field" class="nes-input is-dark" placeholder="Type here...">
+            </div>
+        </section>
+        <br>
         <p>It's me, Mario !</p>
         <p>It's me, Mario !</p>
         <p>It's me, Mario !</p>
@@ -75,3 +113,11 @@
 </body>
 
 </html>
+
+<script type="text/javascript" src="script.js"></script>
+
+<script type="text/javascript">
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>

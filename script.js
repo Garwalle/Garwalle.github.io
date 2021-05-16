@@ -8,7 +8,7 @@ $(document).ready(function () {
             $(".bannerImg").css("width", "0");
             $(".bannerImg").fadeOut(450).promise().done(function () {
                 $("#blanckNB").css("width", "100%");
-                $("#NBImg").css("width", "15%");
+                $("#NBImg").css("width", "18%");
             });
 
         } else {
@@ -20,5 +20,9 @@ $(document).ready(function () {
                 $(".bannerImg").css("width", "70%");
             });
         }
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 });
