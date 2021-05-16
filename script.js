@@ -3,18 +3,22 @@ $(document).ready(function () {
     function scrollFunction() {
 
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            $("#banner").css("height", "8vh");
+            $("#banner").css("height", "8%");
             $("#page").css("filter", "blur(0px)");
-            $(".bannerImg").css("width", "0%");
-            $(".bannerImg").fadeOut();
-            $("#bannerButtons").css("width", "80vh");
+            $(".bannerImg").css("width", "0");
+            $(".bannerImg").fadeOut(450).promise().done(function () {
+                $("#blanckNB").css("width", "100%");
+                $("#NBImg").css("width", "15%");
+            });
 
         } else {
-            $("#banner").css("height", "45vh");
-            $("#page").css("filter", "blur(4px)");
-            $(".bannerImg").fadeIn();
-            $(".bannerImg").css("width", "70%");
-            $("#bannerButtons").css("width", "70vh");
+            $("#NBImg").css("width", "0%");
+            $("#blanckNB").css("width", "0").promise().done(function () {
+                $("#banner").css("height", "45%");
+                $("#page").css("filter", "blur(4px)");
+                $(".bannerImg").fadeIn();
+                $(".bannerImg").css("width", "70%");
+            });
         }
     }
 });
