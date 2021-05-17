@@ -129,7 +129,7 @@ body {
     justify-content: flex-end;
 }
 
-.messageLBallons {
+#messageLBallons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -137,7 +137,7 @@ body {
     margin-left: 3.5vh;
 }
 
-.messageRBallons {
+#messageRBallons {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -145,10 +145,10 @@ body {
     margin-right: 3.5vh;
 }
 
-.messageLBallons>div {
-    margin-bottom: 5vh;
+.nes-balloon.from-left.is-dark {
+    margin-bottom: 3vh;
 }
 
-.messageRBallons>div {
-    margin-bottom: 5vh;
+.nes-balloon.from-right.is-dark {
+    margin-bottom: 3vh;
 }

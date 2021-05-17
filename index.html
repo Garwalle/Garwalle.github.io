@@ -16,7 +16,6 @@
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -48,7 +47,7 @@
                     <section class="message -left">
                         <img src="style/img/avatar2.png" width="100px" height="100px">
                         <!-- Balloon -->
-                        <div class="messageLBallons">
+                        <div id="messageLBallons">
                             <div class="nes-balloon from-left is-dark">
                                 <p>Hi, I'm Martin !</p>
                             </div>
@@ -68,20 +67,18 @@
 
                     <section class="message -right">
                         <!-- Balloon -->
-                        <div class="messageRBallons">
-                            <div class="nes-balloon from-right is-dark">
-                                <p>Projects</p>
-                            </div>
-                            <div class="nes-balloon from-right is-dark">
-                                <p>There is some good stuff over here !</p>
-                            </div>
+                        <div id="messageRBallons">
                         </div>
                         <img src="style/img/trollface.png" width="100px" height="100px" style="transform: scaleX(-1);">
                     </section>
                 </section>
-                <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
-                    <input type="text" id="dark_field" class="nes-input is-dark" placeholder="Type here...">
-                </div>
+                <form id="homeDialogue">
+                    <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
+                        <input type="text" id="dark_field" class="nes-input is-dark" placeholder="Type here...">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+
             </section>
         </div>
         <br>
@@ -111,7 +108,26 @@
         <p>It's me, Mario !</p>
         <p>It's me, Mario !</p>
         <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <p>It's me, Mario !</p>
+        <div id="projects">
+
+        </div>
     </div>
 </body>
 
 </html>
+
+<script type="text/javascript" src="script.js"></script>

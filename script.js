@@ -26,3 +26,47 @@ $(document).ready(function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+var nbMsg = 0;
+$('#homeDialogue').submit(function () {
+    if (nbMsg >= 20) {
+        window.alert("test");
+        return false;
+    }
+
+    let msg = $('#dark_field').val().toLowerCase();
+    $('#dark_field').val("");
+
+    nbMsg++;
+    let div = document.createElement("p");
+    div.setAttribute("class", "nes-balloon from-right is-dark");
+    div.setAttribute("id", "msg" + nbMsg);
+    let p = document.createElement("p");
+
+    let toSCroll;
+
+    switch (msg) {
+        case 'p': case 'projects': case 'project': case 'see your projects':
+            pTEXT = msg;
+            toSCroll = "projects";
+            break;
+        case 'a': case 'about': case 'show information about you !':
+            pTEXT = msg;
+            toSCroll = "about";
+            break;
+        case 'c': case 'contact': case 'i want to contact you':
+            pTEXT = msg;
+            toSCroll = "contact";
+            break;
+        default:
+            pTEXT = "Unrecognized answer !";
+    }
+    p.innerHTML = pTEXT;
+
+    if (nbMsg > 1) document.getElementById("msg" + (nbMsg - 1)).after(div);
+    else document.getElementById("messageRBallons").appendChild(div);
+    document.getElementById("msg" + nbMsg).appendChild(p);
+    if (toSCroll) document.getElementById(toSCroll).scrollIntoView();
+    return false;
+});
+
