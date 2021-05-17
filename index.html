@@ -16,6 +16,7 @@
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <img id="NBImg" onclick="scrollToTop();" src="style/img/martin jeanne.png" />
             <div id="blanckNB"></div>
             <div id="bannerButtons">
-                <a class="nes-btn is-error" onclick="scrollToTop();">Home</a>
+                <a class="nes-btn is-error" href="#home">Home</a>
                 <a class="nes-btn is-success" href="#">Projects</a>
                 <a class="nes-btn is-primary" href="#">About</a>
                 <a class="nes-btn is-warning" href="#">Contact</a>
@@ -39,48 +40,50 @@
     </div>
 
     <div id="page">
-        <h1 style="font-size: 20vh; margin: auto;text-align: center;">Hello world !</h1>
-        <!-- Balloon 'is-dark'  -->
-        <section class="nes-container is-dark">
-            <section class="message-list">
-                <section class="message -left">
-                    <img src="style/img/avatar2.png" width="100px" height="100px">
-                    <!-- Balloon -->
-                    <div class="messageLBallons">
-                        <div class="nes-balloon from-left is-dark">
-                            <p>Hi, I'm Martin !</p>
+        <div id="home">
+            <h1 style="font-size: 20vh; margin: auto;text-align: center;">Hello world !</h1>
+            <!-- Balloon 'is-dark'  -->
+            <section class="nes-container is-dark">
+                <section class="message-list">
+                    <section class="message -left">
+                        <img src="style/img/avatar2.png" width="100px" height="100px">
+                        <!-- Balloon -->
+                        <div class="messageLBallons">
+                            <div class="nes-balloon from-left is-dark">
+                                <p>Hi, I'm Martin !</p>
+                            </div>
+                            <div class="nes-balloon from-left is-dark">
+                                <p>This my portfolio, welcome.</p>
+                            </div>
+                            <div class="nes-balloon from-left is-dark">
+                                <p>What do you desire ?<br>
+                                    "See your <span class="ui green text">projects</span>"<br>
+                                    "Show information <span class="ui blue text">about</span> you !"<br>
+                                    "I want to <span class="ui yellow text">contact</span> you"<br>
+                                </p>
+                            </div>
                         </div>
-                        <div class="nes-balloon from-left is-dark">
-                            <p>This my portfolio, welcome.</p>
-                        </div>
-                        <div class="nes-balloon from-left is-dark">
-                            <p>What do you desire ?<br>
-                                "See your <span class="ui green text">projects</span>"<br>
-                                "Show information <span class="ui blue text">about</span> you !"<br>
-                                "I want to <span class="ui yellow text">contact</span> you"<br>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
 
-                <section class="message -right">
-                    <!-- Balloon -->
-                    <div class="messageRBallons">
-                        <div class="nes-balloon from-right is-dark">
-                            <p>Projects</p>
+                    <section class="message -right">
+                        <!-- Balloon -->
+                        <div class="messageRBallons">
+                            <div class="nes-balloon from-right is-dark">
+                                <p>Projects</p>
+                            </div>
+                            <div class="nes-balloon from-right is-dark">
+                                <p>There is some good stuff over here !</p>
+                            </div>
                         </div>
-                        <div class="nes-balloon from-right is-dark">
-                            <p>There is some good stuff over here !</p>
-                        </div>
-                    </div>
-                    <img src="style/img/trollface.png" width="100px" height="100px" style="transform: scaleX(-1);">
+                        <img src="style/img/trollface.png" width="100px" height="100px" style="transform: scaleX(-1);">
+                    </section>
                 </section>
+                <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
+                    <input type="text" id="dark_field" class="nes-input is-dark" placeholder="Type here...">
+                </div>
             </section>
-            <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
-                <input type="text" id="dark_field" class="nes-input is-dark" placeholder="Type here...">
-            </div>
-        </section>
+        </div>
         <br>
         <p>It's me, Mario !</p>
         <p>It's me, Mario !</p>
@@ -112,11 +115,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript" src="script.js"></script>
-
-<script type="text/javascript">
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-</script>
