@@ -73,7 +73,7 @@ body {
 }
 
 .bannerImg {
-    width: 70%;
+    width: 70vh;
     height: auto;
     transition: 0.4s;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 #bannerButtons {
-    width: 80vh;
+    width: 70vh;
     display: flex;
     justify-content: space-between;
     font-family: 'A Goblin Appears!';
