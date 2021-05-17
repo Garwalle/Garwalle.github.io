@@ -22,8 +22,10 @@
 
     <div id="banner">
         <div id="bannerImgs">
-            <img class="bannerImg" src="style/img/Martin.png" />
-            <img class="bannerImg" style="margin-top: -20px;" src="style/img/jeanne.png" />
+            <div id="bannerImgsFlex">
+                <img class="bannerImg" src="style/img/Martin.png" />
+                <img class="bannerImg" style="margin-top: -20px;" src="style/img/jeanne.png" />
+            </div>
         </div>
 
         <div id="navbar">
@@ -31,7 +33,7 @@
             <div id="blanckNB"></div>
             <div id="bannerButtons">
                 <a class="nes-btn is-error" href="#home">Home</a>
-                <a class="nes-btn is-success" href="#">Projects</a>
+                <a class="nes-btn is-success" href="#projects">Projects</a>
                 <a class="nes-btn is-primary" href="#">About</a>
                 <a class="nes-btn is-warning" href="#">Contact</a>
             </div>
@@ -75,13 +77,25 @@
                 <form id="homeDialogue">
                     <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
                         <input type="text" id="dark_field" class="nes-input is-dark" placeholder="Type here...">
-                        <button type="submit">Send</button>
+                        <button type="submit" class="nes-btn">Send</button>
                     </div>
                 </form>
 
             </section>
         </div>
         <br>
+
+        <dialog class="nes-dialog is-rounded" id="dialog-rounded">
+            <form method="dialog">
+                <p class="title">Wait !</p>
+                <p>To many messages, refresh the page.</p>
+                <menu class="dialog-menu">
+                    <button class="nes-btn">Cancel</button>
+                    <a onclick="location.reload();" class="nes-btn is-primary">Refresh</a>
+                </menu>
+            </form>
+        </dialog>
+
         <p>It's me, Mario !</p>
         <p>It's me, Mario !</p>
         <p>It's me, Mario !</p>
