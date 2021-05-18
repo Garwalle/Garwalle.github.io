@@ -203,3 +203,8 @@ h2 {
     width: 100%;
     background-color: #252424;
 }
+
+.ui.slide.masked.reveal.image {
+    height: 20vh;
+
+}
