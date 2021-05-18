@@ -44,7 +44,7 @@
     </div>
 
     <div id="page">
-        <div id="home">
+        <section id="home">
             <h1>Hello world !</h1>
 
             <!-- Balloon 'is-dark'  -->
@@ -86,8 +86,7 @@
                 </form>
 
             </section>
-        </div>
-        <br>
+        </section>
 
         <dialog class="nes-dialog is-rounded" id="dialog-rounded">
             <form method="dialog">
@@ -100,13 +99,13 @@
             </form>
         </dialog>
 
-        <div id="projects">
+        <section id="projects">
             <h2>Projects</h2>
             <div class="ui inverted link cards">
-                <div class="ui card">
+                <div class="ui card" onclick="scrollToTop();">
                     <div class="ui slide masked reveal image">
-                        <img src="style/img/Martin.png" class="visible content" />
-                        <img src="style/img/jeanne.png" class="hidden content" />
+                        <img src="style/img/projects/portfolio.png" class="visible content" />
+                        <img src="style/img/icon/html-css-js.png" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Portfolio</a>
@@ -116,26 +115,62 @@
                     </div>
                 </div>
 
-                <div class="ui card">
+                <div class="ui card" onclick="openInNewTab('');">
                     <div class="ui slide masked reveal image">
-                        <img src="style/img/Martin.png" class="visible content" />
-                        <img src="style/img/jeanne.png" class="hidden content" />
+                        <img src="style/img/projects/ember-store.png" class="visible content" />
+                        <img src="style/img/icon/html-css-js.png-handlebars.png" class="hidden content" />
                     </div>
                     <div class="content">
-                        <a class="header">Team Fu &amp; Hess</a>
+                        <a class="header">Ember-store</a>
                         <div class="meta">
-                            <span class="date">Created in Sep 2014</span>
+                            <span class="date">Created in 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        <img src="style/img/projects/discordbot.png" class="visible content" />
+                        <img src="style/img/icon/js.png" class="hidden content" />
+                    </div>
+                    <div class="content">
+                        <a class="header">Discord bot</a>
+                        <div class="meta">
+                            <span class="date">Created in 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui card" onclick="openInNewTab('https://garwalle.herokuapp.com/page');">
+                    <div class="ui slide masked reveal image">
+                        <img src="style/img/projects/chinook.png" class="visible content" />
+                        <img src="style/img/icon/html-css-js.png-php.png" class="hidden content" />
+                    </div>
+                    <div class="content">
+                        <a class="header">Chinook</a>
+                        <div class="meta">
+                            <span class="date">Created in 2020</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ui card" onclick="openInNewTab('http://lesbleus-1.sts-sio-caen.info/');">
+                    <div class="ui slide masked reveal image">
+                        <img src="style/img/projects/reservation.png" class="visible content" />
+                        <img src="style/img/icon/html-css-js.png-java.png" class="hidden content" />
+                    </div>
+                    <div class="content">
+                        <a class="header">Reservation</a>
+                        <div class="meta">
+                            <span class="date">Created in 2020</span>
                         </div>
                     </div>
                     <div class="extra content">
-                        <a>
-                            <i class="users icon"></i>
-                            2 Members
-                        </a>
+                        <a><i class="users icon"></i>3 Members</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </body>
 

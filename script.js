@@ -31,6 +31,10 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+   }   
+
 var nbMsg = 0;
 $('#userMsg').submit(function () {
     if (nbMsg >= 20) {
