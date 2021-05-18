@@ -6,6 +6,7 @@ function scrollFunction() {
 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $("#page").css("filter", "blur(0px)");
+        $("#bgGif").fadeOut();
         $(".bannerImg").css("width", "0");
         $("#banner").css("height", "8%");
         $(".bannerImg").fadeOut().promise().done(function () {
@@ -18,6 +19,7 @@ function scrollFunction() {
         $("#blanckNB").css("width", "0").promise().done(function () {
             $("#banner").css("height", "45%");
             $("#page").css("filter", "blur(4px)");
+            $("#bgGif").fadeIn();
             $(".bannerImg").fadeIn();
             $(".bannerImg").css("width", "70%");
         });
@@ -30,7 +32,7 @@ function scrollToTop() {
 }
 
 var nbMsg = 0;
-$('#homeDialogue').submit(function () {
+$('#userMsg').submit(function () {
     if (nbMsg >= 20) {
         document.getElementById('dialog-rounded').showModal();
         return false;
@@ -70,6 +72,7 @@ $('#homeDialogue').submit(function () {
     else document.getElementById("messageRBallons").appendChild(div);
     document.getElementById("msg" + nbMsg).appendChild(p);
     if (toSCroll) document.getElementById(toSCroll).scrollIntoView();
+    document.getElementById("msgList").scrollTop = document.getElementById("msgList").scrollHeight;
     return false;
 });
 

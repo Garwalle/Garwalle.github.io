@@ -16,11 +16,13 @@
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="style/img/pokeball.png" />
 </head>
 
 <body>
 
     <div id="banner">
+        <img id="bgGif" src="style/img/starMoving.gif">
         <div id="bannerImgs">
             <img class="bannerImg" src="style/img/Martin.png" />
             <img class="bannerImg" style="margin-top: -20px;" src="style/img/jeanne.png" />
@@ -40,10 +42,11 @@
 
     <div id="page">
         <div id="home">
-            <h1 style="font-size: 15vh; margin: auto; text-align: center;">Hello world !</h1>
+            <h1 style="font-size: 14vh; margin: auto; text-align: center;">Hello world !</h1>
+            
             <!-- Balloon 'is-dark'  -->
             <section class="nes-container is-dark">
-                <section class="message-list">
+                <section id="msgList" class="message-list">
                     <section class="message -left">
                         <img src="style/img/avatar2.png" width="100px" height="100px">
                         <!-- Balloon -->
@@ -72,7 +75,7 @@
                         <img src="style/img/trollface.png" width="100px" height="100px" style="transform: scaleX(-1);">
                     </section>
                 </section>
-                <form id="homeDialogue">
+                <form id="userMsg">
                     <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
                         <input type="text" id="dark_field" class="nes-input is-dark" placeholder="Type here...">
                         <button type="submit" class="nes-btn">Send</button>
@@ -89,53 +92,14 @@
                 <p>To many messages, refresh the page.</p>
                 <menu class="dialog-menu">
                     <button class="nes-btn">Cancel</button>
-                    <a onclick="location.reload();" class="nes-btn is-primary">Refresh</a>
+                    <a onclick="location.hash='home';location.reload();" class="nes-btn is-primary">Refresh</a>
                 </menu>
             </form>
         </dialog>
 
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
-        <p>It's me, Mario !</p>
         <div id="projects">
-
+            List of my projects
+            <i class="nes-mario"></i>
         </div>
     </div>
 </body>
