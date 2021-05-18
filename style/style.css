@@ -59,14 +59,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 #bannerImgs {
-   display: none;
-}
-
-#bannerImgsFlex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +102,7 @@ dialog {
 }
 
 #NBImg {
-    width: 18%;
+    width: 18vh;
     height: auto;
     transition: 0.4s;
 }
