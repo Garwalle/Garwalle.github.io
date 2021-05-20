@@ -75,8 +75,8 @@ $('#userMsg').submit(function () {
     if (nbMsg > 1) document.getElementById("msg" + (nbMsg - 1)).after(div);
     else document.getElementById("messageRBallons").appendChild(div);
     document.getElementById("msg" + nbMsg).appendChild(p);
-    if (toSCroll) document.getElementById(toSCroll).scrollIntoView();
     document.getElementById("msgList").scrollTop = document.getElementById("msgList").scrollHeight;
+    if (toSCroll) document.getElementById(toSCroll).scrollIntoView();
     return false;
 });
 
