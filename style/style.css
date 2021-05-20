@@ -241,7 +241,9 @@ h3 {
     height: 20vh;
 }
 
-.ui.inverted.link.cards {}
+.date {
+    font-size: 1.45vh;
+}
 
 /* About */
 

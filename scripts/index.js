@@ -1,8 +1,8 @@
 
-window.onscroll = function () { scrollFunction() };
-window.onload = function () { scrollFunction() };
+window.onscroll = function () { scrollShowTitle() };
+window.onload = function () { scrollShowTitle() };
 
-function scrollFunction() {
+function scrollShowTitle() {
 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $("#page").css("filter", "blur(0px)");
@@ -26,14 +26,13 @@ function scrollFunction() {
     }
 }
 
-
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function openInNewTab(url) {
     window.open(url, '_blank').focus();
-   }   
+}
 
 var nbMsg = 0;
 $('#userMsg').submit(function () {

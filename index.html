@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,6 +5,7 @@
 
     <title>Martin - Portfolio</title>
     <meta name="description" content="Martin Jeanne's portfolio !">
+    <meta name="author" content="Martin Jeanne">
 
     <!-- Foomantic & Jquery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
@@ -14,6 +14,9 @@
 
     <!-- Ness.css -->
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="style/img/ico.ico" />
@@ -101,31 +104,30 @@
 
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="ui inverted centered link cards">
-                <div class="ui card" onclick="scrollToTop();">
+            <h2 data-aos="fade-in">Projects</h2>
+            <div class="ui inverted centered cards">
+                <div class="ui link card" onclick="scrollToTop();">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/portfolio.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Portfolio</a>
-                        <div class="meta">
-                            <span class="date">Created in 2021</span>
-                        </div>
+                        <div class="meta"><span class="date">2021</span></div>
+                        <div class="description">The portfolio website you are reading !</div>
                     </div>
                 </div>
 
-                <div class="ui card" onclick="openInNewTab('http://solo-1.sts-sio-caen.info/');">
+                <div class="ui link card" onclick="openInNewTab('http://solo-1.sts-sio-caen.info/');">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/ember-store.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png-handlebars.png" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Ember-store</a>
-                        <div class="meta">
-                            <span class="date">Created in 2021</span>
-                        </div>
+                        <div class="meta"><span class="date">2021</span></div>
+                        <div class="description">The 2nd project did in second year of BTS SIO, using Ember JS
+                            framework.</div>
                     </div>
                 </div>
 
@@ -136,51 +138,70 @@
                     </div>
                     <div class="content">
                         <a class="header">Discord bot</a>
-                        <div class="meta">
-                            <span class="date">Created in 2021</span>
-                        </div>
+                        <div class="meta"><span class="date">2021</span></div>
+                        <div class="description">A bot for the application discord. I did it to learn more about
+                            JavaScript !</div>
                     </div>
                 </div>
 
-                <div class="ui card" onclick="openInNewTab('http://lesbleus-1.sts-sio-caen.info/');">
+                <div class="ui link card" onclick="openInNewTab('http://lesbleus-1.sts-sio-caen.info/');">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/reservation.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png-java.png" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Reservation</a>
-                        <div class="meta">
-                            <span class="date">Created in 2020</span>
-                        </div>
+                        <div class="meta"><span class="date">2020</span></div>
+                        <div class="description">The 1nd project did in second year of BTS SIO, uses Spring Boot.</div>
                     </div>
-                    <div class="extra content">
-                        <a><i class="users icon"></i>3 Members</a>
-                    </div>
+                    <div class="extra content"><i class="users icon"></i>3 Members</div>
                 </div>
 
-                <div class="ui card" onclick="openInNewTab('https://garwalle.herokuapp.com/page');">
+                <div class="ui link card" onclick="openInNewTab('https://garwalle.herokuapp.com/page');">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/chinook.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png-php.png" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Chinook</a>
-                        <div class="meta">
-                            <span class="date">Created in 2020</span>
-                        </div>
+                        <div class="meta"><span class="date">2020</span></div>
+                        <div class="description">A school exercise that i think i did well.</div>
                     </div>
                 </div>
 
-                <div class="ui card" onclick="window.location='graphism';">
+                <div class="ui link card" onclick="window.location='graphism';">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/graphisme.png" class="visible content" />
                         <img src="style/img/icon/ps-c4d.png" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Graphism</a>
-                        <div class="meta">
-                            <span class="date">Logos & banners</span>
-                        </div>
+                        <div class="meta"><span class="date">Logos & banners</span></div>
+                        <div class="description">Graphic creations i have made for people online.</div>
+                    </div>
+                </div>
+
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        <img src="style/img/projects/graphisme.png" class="visible content" />
+                        <img src="style/img/icon/ps-c4d.png" class="hidden content" />
+                    </div>
+                    <div class="content">
+                        <a class="header">Internship about PHP</a>
+                        <div class="meta"><span class="date">2019</span></div>
+                        <div class="description">2nd stage, i coded test in PHP for the academic website of Caen.</div>
+                    </div>
+                </div>
+
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        <img src="style/img/projects/graphisme.png" class="visible content" />
+                        <img src="style/img/icon/ps-c4d.png" class="hidden content" />
+                    </div>
+                    <div class="content">
+                        <a class="header">Internship about Arduino</a>
+                        <div class="meta"><span class="date">2018</span></div>
+                        <div class="description">First stage of my BTS SIO, where i worked on Arduino.</div>
                     </div>
                 </div>
             </div>
@@ -188,16 +209,20 @@
 
 
         <section id="about">
-            <h2>About</h2>
+            <h2 data-aos="fade-in">About</h2>
         </section>
 
 
         <section id="contact">
-            <h2>Contact</h2>
+            <h2 data-aos="fade-in">Contact</h2>
         </section>
     </div>
 
     <script type="text/javascript" src="scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
