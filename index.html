@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
 
     <!-- Ness.css -->
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/nes.css@latest/css/nes.min.css" />
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -105,8 +105,8 @@
 
         <section id="projects">
             <h2 data-aos="fade-in">Projects</h2>
-            <div class="ui inverted centered cards">
-                <div class="ui link card" onclick="scrollToTop();">
+            <div class="cards">
+                <div class="ui inverted link card" onclick="scrollToTop();">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/portfolio.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png" class="hidden content" />
@@ -118,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="ui link card" onclick="openInNewTab('http://solo-1.sts-sio-caen.info/');">
+                <div class="ui inverted link card" onclick="openInNewTab('http://solo-1.sts-sio-caen.info/');">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/ember-store.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png-handlebars.png" class="hidden content" />
@@ -131,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="ui card">
+                <div class="ui inverted card">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/discordbot.png" class="visible content" />
                         <img src="style/img/icon/js.png" class="hidden content" />
@@ -144,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="ui link card" onclick="openInNewTab('http://lesbleus-1.sts-sio-caen.info/');">
+                <div class="ui inverted link card" onclick="openInNewTab('http://lesbleus-1.sts-sio-caen.info/');">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/reservation.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png-java.png" class="hidden content" />
@@ -152,12 +152,13 @@
                     <div class="content">
                         <a class="header">Reservation</a>
                         <div class="meta"><span class="date">2020</span></div>
-                        <div class="description">The 1nd project did in second year of BTS SIO, uses Spring Boot.</div>
+                        <div class="description">The 1nd project did in second year of BTS SIO, uses Spring Boot.
+                        </div>
                     </div>
                     <div class="extra content"><i class="users icon"></i>3 Members</div>
                 </div>
 
-                <div class="ui link card" onclick="openInNewTab('https://garwalle.herokuapp.com/page');">
+                <div class="ui inverted link card" onclick="openInNewTab('https://garwalle.herokuapp.com/page');">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/chinook.png" class="visible content" />
                         <img src="style/img/icon/html-css-js.png-php.png" class="hidden content" />
@@ -169,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="ui link card" onclick="window.location='graphism';">
+                <div class="ui inverted link card" onclick="window.location='graphism';">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/graphisme.png" class="visible content" />
                         <img src="style/img/icon/ps-c4d.png" class="hidden content" />
@@ -181,22 +182,23 @@
                     </div>
                 </div>
 
-                <div class="ui card">
+                <div class="ui inverted card">
                     <div class="ui slide masked reveal image">
-                        <img src="style/img/projects/graphisme.png" class="visible content" />
-                        <img src="style/img/icon/ps-c4d.png" class="hidden content" />
+                        <img src="" class="visible content" />
+                        <img src="" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Internship about PHP</a>
                         <div class="meta"><span class="date">2019</span></div>
-                        <div class="description">2nd stage, i coded test in PHP for the academic website of Caen.</div>
+                        <div class="description">2nd stage, i coded test in PHP for the academic website of Caen.
+                        </div>
                     </div>
                 </div>
 
-                <div class="ui card">
+                <div class="ui inverted card">
                     <div class="ui slide masked reveal image">
-                        <img src="style/img/projects/graphisme.png" class="visible content" />
-                        <img src="style/img/icon/ps-c4d.png" class="hidden content" />
+                        <img src="" class="visible content" />
+                        <img src="" class="hidden content" />
                     </div>
                     <div class="content">
                         <a class="header">Internship about Arduino</a>
@@ -204,12 +206,32 @@
                         <div class="description">First stage of my BTS SIO, where i worked on Arduino.</div>
                     </div>
                 </div>
+
+                <div class="ui inverted card">
+                    <div class="ui slide masked reveal image">
+                        <img src="" class="visible content" />
+                        <img src="" class="hidden content" />
+                    </div>
+                    <div class="content">
+                        <a class="header">Harbor management</a>
+                        <div class="meta"><span class="date">2018</span></div>
+                        <div class="description">A app wich manage a harbor, like boat that can accost, and more.</div>
+                    </div>
+                </div>
+
+                <div class="ui card" style="visibility: hidden;"></div>
             </div>
         </section>
 
 
         <section id="about">
             <h2 data-aos="fade-in">About</h2>
+            <progress class="nes-progress" value="90" max="100"></progress>
+            <progress class="nes-progress is-primary" value="80" max="100"></progress>
+            <progress class="nes-progress is-success" value="50" max="100"></progress>
+            <progress class="nes-progress is-warning" value="30" max="100"></progress>
+            <progress class="nes-progress is-error" value="10" max="100"></progress>
+            <progress class="nes-progress is-pattern" value="50" max="100"></progress>
         </section>
 
 
@@ -220,9 +242,7 @@
 
     <script type="text/javascript" src="scripts/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
