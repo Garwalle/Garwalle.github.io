@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -46,10 +45,16 @@
     <div id="page">
         <section id="projects">
             <h2>Graphisme</h2>
+            <div id="imgList">
+                <script type="text/javascript">
+                    var htmlString = "<?php echo iterator_count(new DirectoryIterator('style/img/graphisme')); ?>";
+                    console.log(htmlString-2);
+                </script>
+            </div>
         </section>
     </div>
+
+    <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 
 </html>
-
-<script type="text/javascript" src="scripts/index.js"></script>
