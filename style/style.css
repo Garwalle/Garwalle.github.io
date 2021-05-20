@@ -84,7 +84,8 @@ body {
 }
 
 .bannerImg {
-    width: 70vh;
+    width: 0vh;
+    display: none;
     height: auto;
     transition: 0.4s;
 }
