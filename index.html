@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,22 +16,17 @@
     <!-- Ness.css -->
     <link rel="stylesheet" href="https://unpkg.com/nes.css@latest/css/nes.min.css" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
 
+    <!-- Me -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="style/img/ico.ico" />
 
-    <!-- Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+
 </head>
 
 <body class="preventFromScrolling">
-    <div class="loader">
-        <div class="ui active dimmer"></div>
-        <div class="ui massive active red elastic loader"></div>
-    </div>
-    </div>
 
     <div id="banner">
         <img class="bgGif" id="gif1" src="style/img/starMoving.gif" alt="Background gif n1 with moving stars">
@@ -42,7 +38,7 @@
         </div>
 
         <nav>
-            <img id="NBImg" onclick="scrollToTop();" src="style/img/martin jeanne.png"
+            <img id="NBImg" onclick="scrollToTop();" src="style/img/martin_jeanne.png"
                 alt="Image that display 'Martin Jeanne'">
             <div id="blanckNB"></div>
             <div id="bannerButtons">
@@ -54,15 +50,21 @@
         </nav>
     </div>
 
+    <div class="loader">
+        <div class="ui active dimmer"></div>
+        <div class="ui massive active red elastic loader"></div>
+    </div>
+
     <div id="page">
         <section id="home">
+            <div></div>
             <h1>Hello world !</h1>
 
             <!-- Balloon 'is-dark'  -->
             <section class="nes-container is-dark">
                 <section id="msgList" class="message-list">
                     <section class="message -left">
-                        <img src="style/img/avatar.png" width="100px" height="100px" alt="Martin's avatar">
+                        <img src="style/img/avatar.png" style="width:100px; height:100px;" alt="Martin's avatar">
                         <!-- Balloon -->
                         <div id="messageLBallons">
                             <div class="nes-balloon from-left is-dark">
@@ -86,7 +88,7 @@
                         <!-- Balloon -->
                         <div id="messageRBallons">
                         </div>
-                        <img src="style/img/avatar2.png" width="100px" height="100px" alt="User's avatar">
+                        <img src="style/img/avatar2.png" style="width:100px; height:100px;" alt="User's avatar">
                     </section>
                 </section>
                 <form id="userMsg">
@@ -103,16 +105,16 @@
             <form method="dialog">
                 <p class="title">Wait !</p>
                 <p>To many messages, refresh the page.</p>
-                <menu class="dialog-menu">
+                <div class="dialog-menu">
                     <button class="nes-btn">Cancel</button>
                     <a onclick="location.hash='home';location.reload();" class="nes-btn is-primary">Refresh</a>
-                </menu>
+                </div>
             </form>
         </dialog>
 
 
         <section id="projects">
-            <h2 data-aos="fade-left">Projects</h2>
+            <h2>Projects</h2>
             <div class="cards">
                 <div class="ui inverted link card" onclick="scrollToTop();">
                     <div class="ui slide masked reveal image">
@@ -233,74 +235,71 @@
 
 
         <section id="about">
-            <h2 data-aos="fade-right">About</h2>
+            <h2>About</h2>
             <header id="aboutHeader">
-                <figure data-aos="fade-right" data-aos-offset="300">
-                    <img id="aboutImg" class="aboutImgHv" data-aos-duration="1000" src="style/img/Martin_irl.JPG"
-                        alt="Picture of Martin">
+                <figure>
+                    <img id="aboutImg" class="aboutImgHv" src="style/img/Martin_irl.JPG" alt="Picture of Martin">
                     <figcaption id="aboutImgFig"><i>Hover me</i></figcaption>
                 </figure>
                 <div id="aboutText">
-                    <h3 data-aos="fade-left">Bonjour !</h3>
-                    <p data-aos="fade-left">I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me
+                    <h3>Bonjour !</h3>
+                    <p>I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me
                         and my <a href="style/pdf/CV-Martin_jeanne.pdf" target="_blank"
                             download="CV-Martin_jeanne">CV</a> !</p>
-                    <p data-aos="fade-left">You can also take a look at the skills i pratice the most.</p>
+                    <p>You can also take a look at the skills i pratice the most.</p>
                 </div>
             </header>
 
-            <div data-aos="fade-right">
+            <div>
                 <h3 id="skillsTitle">Skills</h3><i> i practice</i>
             </div>
             <div class="skills">
-                <div class="skill" data-aos="fade-right">
+                <div class="skill">
                     <p class="skillText">HTML & CSS</p>
                     <progress class="nes-progress is-error" value="90" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill" data-aos="fade-left">
+                <div class="skill">
                     <p class="skillText">JavaScript</p>
                     <progress class="nes-progress is-warning" value="92" max="100"></progress>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill" data-aos="fade-right">
+                <div class="skill">
                     <p class="skillText">PHP</p>
                     <progress class="nes-progress is-primary" value="78" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill" data-aos="fade-left">
+                <div class="skill">
                     <p class="skillText">C#</p>
                     <progress class="nes-progress " value="50" max="100"></progress>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill" data-aos="fade-right">
+                <div class="skill">
                     <p class="skillText">Phyton</p>
                     <progress class="nes-progress is-success" value="40" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill" data-aos="fade-left">
+                <div class="skill">
                     <p class="skillText">Java</p>
                     <progress class="nes-progress is-error" value="55" max="100"></progress>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill" data-aos="fade-right">
+                <div class="skill">
                     <p class="skillText">SQL</p>
-                    <progress class="nes-progress" value="55" max="70"></progress>
+                    <progress class="nes-progress" value="62" max="100"></progress>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2 data-aos="fade-left">Contact</h2>
+            <h2>Contact</h2>
         </section>
     </div>
 
     <script type="text/javascript" src="scripts/index.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
 </body>
 
 </html>

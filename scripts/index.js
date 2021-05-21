@@ -3,7 +3,7 @@ window.addEventListener('load', function () {
     $('body').removeClass('preventFromScrolling');
     scrollShowTitle();
     window.onscroll = function () { scrollShowTitle(); };
-})
+});
 
 function scrollShowTitle() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -54,6 +54,7 @@ $('#userMsg').submit(function () {
     let p = document.createElement("p");
 
     let toSCroll;
+    let pTEXT;
 
     switch (msg) {
         case 'p': case 'projects': case 'project': case 'see your projects':
