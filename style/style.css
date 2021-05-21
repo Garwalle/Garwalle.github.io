@@ -189,6 +189,10 @@ h3 {
     font-family: 'Josefin Sans';
 }
 
+a {
+    cursor: pointer;
+}
+
 #home {
     margin-top: 25vh;
     padding-top: 6vh;
