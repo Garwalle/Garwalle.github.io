@@ -51,6 +51,24 @@ body {
     margin-top: 18%;
 }
 
+.preventFromScrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.loader {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: wait;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #banner {
     z-index: 2;
     width: 100%;
@@ -67,14 +85,22 @@ body {
     transition: 0.6s;
 }
 
-#bgGif {
+.bgGif {
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0;
+    width: 50%;
+    height: 100%;
     position: absolute;
     top: 0;
+    transition: 0.5s;
+}
+
+#gif1 {
     left: 0;
-    width: 100%;
-    height: 100%;
+}
+
+#gif2 {
+    left: 50%;
 }
 
 #bannerImgs {

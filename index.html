@@ -25,10 +25,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
 </head>
 
-<body>
+<body class="preventFromScrolling">
+    <div class="loader">
+        <div class="ui active dimmer"></div>
+            <div class="ui massive active red elastic loader"></div>
+        </div>
+    </div>
 
     <div id="banner">
-        <img id="bgGif" src="style/img/starMoving.gif">
+        <img class="bgGif" id="gif1" src="style/img/starMoving.gif">
+        <img class="bgGif" id="gif2" src="style/img/starMoving.gif">
         <div id="bannerImgs">
             <img class="bannerImg" src="style/img/Martin.png" />
             <img class="bannerImg" style="margin-top: -20px;" src="style/img/jeanne.png" />
@@ -226,6 +232,7 @@
 
         <section id="about">
             <h2 data-aos="fade-in">About</h2>
+            <p>cv, photo, skills (loader)</p>
             <progress class="nes-progress" value="90" max="100"></progress>
             <progress class="nes-progress is-primary" value="80" max="100"></progress>
             <progress class="nes-progress is-success" value="50" max="100"></progress>
