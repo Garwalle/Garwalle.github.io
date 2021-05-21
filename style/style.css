@@ -116,7 +116,7 @@ body {
     transition: 0.4s;
 }
 
-#navbar {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +281,7 @@ h3 {
     margin-bottom: 10vh;
 }
 
-#aboutPresent {
+#aboutHeader {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30vh;
@@ -295,7 +295,7 @@ h3 {
     filter: grayscale(100%) contrast(120%);
 }
 
-#aboutPresent>figure {
+#aboutHeader>figure {
     width: 37%;
 }
 
@@ -306,7 +306,7 @@ figcaption {
     transition: 0.5s;
 }
 
-#aboutPresent>div {
+#aboutHeader>div {
     width: 40%;
 }
 
@@ -332,10 +332,40 @@ figcaption {
     cursor: pointer;
 }
 
-#aboutSkills {
+#skillsTitle {
     margin: 0;
     display: inline-block;
     width: auto;
+}
+
+.skills {
+    display: flex;
+    height: 17%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill {
+    width: 43%;
+}
+
+.redBar {
+    width: 2px;
+    height: 100%;
+    background-color: red;
+    box-shadow: 5px 5px 9px 2px rgba(0, 0, 0, 0.2);
+}
+
+.skillText {
+    margin: 0 0 0 1.5vh;
+    padding: 0;
+    font-size: 2.2vh;
+    font-family: 'A Goblin Appears!';
+}
+
+.nes-progress {
+    width: 100%;
+    height: 3.3vh;
 }
 
 /* Contact */

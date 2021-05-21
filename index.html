@@ -41,7 +41,7 @@
                 alt="Image that display 'Jeanne'">
         </div>
 
-        <div id="navbar">
+        <nav>
             <img id="NBImg" onclick="scrollToTop();" src="style/img/martin jeanne.png"
                 alt="Image that display 'Martin Jeanne'">
             <div id="blanckNB"></div>
@@ -51,7 +51,7 @@
                 <a class="nes-btn is-primary" href="#about">About</a>
                 <a class="nes-btn is-warning" style="color: white;" href="#contact">Contact</a>
             </div>
-        </div>
+        </nav>
     </div>
 
     <div id="page">
@@ -233,9 +233,8 @@
 
 
         <section id="about">
-            <div></div>
             <h2 data-aos="fade-right">About</h2>
-            <div id="aboutPresent">
+            <header id="aboutHeader">
                 <figure data-aos="fade-right" data-aos-offset="300">
                     <img id="aboutImg" class="aboutImgHv" data-aos-duration="1000" src="style/img/Martin_irl.JPG"
                         alt="Picture of Martin">
@@ -243,20 +242,56 @@
                 </figure>
                 <div id="aboutText">
                     <h3 data-aos="fade-left">Bonjour !</h3>
-                    <p data-aos="fade-left">I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me and my <a
-                            href="style/pdf/CV-Martin_jeanne.pdf" target="_blank" download="CV-Martin_jeanne">CV</a> !</p>
+                    <p data-aos="fade-left">I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me
+                        and my <a href="style/pdf/CV-Martin_jeanne.pdf" target="_blank"
+                            download="CV-Martin_jeanne">CV</a> !</p>
                     <p data-aos="fade-left">You can also take a look at the skills i pratice the most.</p>
                 </div>
-            </div>
-            <div data-aos="fade-right"><h3 id="aboutSkills">Skills</h3><i> i practice</i></div>
-            <progress class="nes-progress" value="55" max="100"></progress>
-            <progress class="nes-progress is-primary" value="80" max="100"></progress>
-            <progress class="nes-progress is-success" value="50" max="100"></progress>
-            <progress class="nes-progress is-warning" value="30" max="100"></progress>
-            <progress class="nes-progress is-error" value="10" max="100"></progress>
-            <progress class="nes-progress is-pattern" value="50" max="100"></progress>
-        </section>
+            </header>
 
+            <div data-aos="fade-right">
+                <h3 id="skillsTitle">Skills</h3><i> i practice</i>
+            </div>
+            <div class="skills">
+                <div class="skill" data-aos="fade-right">
+                    <p class="skillText">HTML & CSS</p>
+                    <progress class="nes-progress is-error" value="90" max="100"></progress>
+                </div>
+                <div class="redBar"></div>
+                <div class="skill" data-aos="fade-left">
+                    <p class="skillText">JavaScript</p>
+                    <progress class="nes-progress is-warning" value="92" max="100"></progress>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill" data-aos="fade-right">
+                    <p class="skillText">PHP</p>
+                    <progress class="nes-progress is-primary" value="78" max="100"></progress>
+                </div>
+                <div class="redBar"></div>
+                <div class="skill" data-aos="fade-left">
+                    <p class="skillText">C#</p>
+                    <progress class="nes-progress " value="50" max="100"></progress>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill" data-aos="fade-right">
+                    <p class="skillText">Phyton</p>
+                    <progress class="nes-progress is-success" value="40" max="100"></progress>
+                </div>
+                <div class="redBar"></div>
+                <div class="skill" data-aos="fade-left">
+                    <p class="skillText">Java</p>
+                    <progress class="nes-progress is-error" value="55" max="100"></progress>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill" data-aos="fade-right">
+                    <p class="skillText">SQL</p>
+                    <progress class="nes-progress" value="55" max="70"></progress>
+                </div>
+            </div>
+        </section>
 
         <section id="contact">
             <h2 data-aos="fade-left">Contact</h2>
