@@ -6,7 +6,6 @@ $(document).ready(function () {
 });
 
 function scrollShowTitle() {
-
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $("#page").css("filter", "blur(0px)");
         $(".bgGif").css("opacity", "0");
@@ -30,7 +29,7 @@ function scrollShowTitle() {
 }
 
 function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
 }
 
 function openInNewTab(url) {
@@ -82,3 +81,16 @@ $('#userMsg').submit(function () {
     return false;
 });
 
+$(".aboutImgHv").mouseenter(function () {
+    $("#aboutImg").css("box-shadow", "1px 1px 10px 0 rgba(0, 0, 0, .1)");
+    $("#aboutImg").css("filter", "none");
+    $("#aboutImgFig").css("opacity", "0");
+    $("#aboutImgFig").css("padding-right", " 6vh");
+});
+
+$(".aboutImgHv").mouseleave(function () {
+    $("#aboutImg").css("box-shadow", "10px 15px 25px 0 rgba(0, 0, 0, .4)");
+    $("#aboutImg").css("filter", "grayscale(100%) contrast(120%)");
+    $("#aboutImgFig").css("opacity", "0.4");
+    $("#aboutImgFig").css("padding-right", " 0");
+});

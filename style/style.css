@@ -244,6 +244,7 @@ h3 {
 
 #projects>h2 {
     margin-bottom: 10vh;
+    text-align: end;
 }
 
 .ui.slide.masked.reveal.image {
@@ -278,11 +279,57 @@ h3 {
 
 #about>h2 {
     margin-bottom: 10vh;
+}
+
+#aboutPresent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+}
+
+#aboutImg {
+    width: 100%;
+    margin-top: 10vh;
+    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .4);
+    transition: 0.5s;
+    filter: grayscale(100%) contrast(120%);
+}
+
+#aboutPresent>figure {
+    width: 37%;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 1.2vh;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+#aboutPresent>div {
+    width: 40%;
+}
+
+#aboutText>h3 {
     text-align: end;
 }
 
-progress {
-    transition: 0.5s;
+#aboutText>p {
+    color: rgb(219, 219, 219);
+    font-size: 2.3vh;
+    text-align: end;
+    margin: 0;
+}
+
+#aboutText>p>b {
+    color: rgb(147, 212, 81);
+    cursor: pointer;
+}
+
+#aboutText>p>a {
+    font-weight: bold;
+    color: rgb(230, 61, 61);
+    cursor: pointer;
 }
 
 /* Contact */
@@ -297,7 +344,8 @@ progress {
 }
 
 #contact>h2 {
-    margin-bottom: 10vh;
+    margin-bottom: 16vh;
+    text-align: end;
 }
 
 /* Graphism */
