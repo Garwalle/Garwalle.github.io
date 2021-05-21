@@ -313,7 +313,10 @@ figcaption {
 }
 
 #aboutText>h3 {
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+    align-items: baseline;
 }
 
 #aboutText>p {
@@ -331,6 +334,9 @@ figcaption {
 #aboutText>p>a {
     font-weight: bold;
     color: rgb(230, 61, 61);
+}
+
+.aboutImgHv {
     cursor: pointer;
 }
 
