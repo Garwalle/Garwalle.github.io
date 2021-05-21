@@ -110,7 +110,7 @@ body {
 }
 
 .bannerImg {
-    width: 0vh;
+    width: 0;
     display: none;
     height: auto;
     transition: 0.4s;
@@ -122,12 +122,12 @@ nav {
     align-items: center;
     align-content: center;
     width: 100%;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 #bannerButtons {
-    width: 70vh;
+    width: 50vw;
     display: flex;
     justify-content: space-between;
     font-family: 'A Goblin Appears!';
@@ -140,7 +140,6 @@ dialog {
 
 .nes-btn {
     font-family: 'PressStart2P';
-    margin-left: 1vh;
 }
 
 #NBImg {
@@ -162,7 +161,7 @@ dialog {
 }
 
 h1 {
-    font-size: 14vh;
+    font-size: 10vw;
     padding-top: 3vh;
     margin-bottom: 8vh;
     font-family: 'Josefin Sans';
@@ -172,27 +171,27 @@ h1 {
 }
 
 h2 {
-    font-size: 11vh;
+    font-size: 9vw;
     font-family: 'Josefin Sans';
-    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    text-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
 }
 
 h3 {
-    font-size: 6vh;
+    font-size: 5.5vw;
     font-family: 'Josefin Sans';
 }
 
 #home {
     padding-top: 6vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .message-list {
     font-family: 'PressStart2P';
     height: 53vh;
-    padding-right: 2vh;
-    padding-left: 2vh;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
     overflow: auto;
 }
 
@@ -211,7 +210,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: 3.5vh;
+    margin-left: 3vw;
 }
 
 #messageRBallons {
@@ -219,7 +218,7 @@ h3 {
     flex-direction: column;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-right: 3.5vh;
+    margin-right: 3vw;
 }
 
 .nes-balloon.from-left.is-dark {
@@ -236,8 +235,8 @@ h3 {
     margin-top: 15vh;
     padding-top: 15vh;
     padding-bottom: 15vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
     width: 100%;
     background-color: #252424;
 }
@@ -252,7 +251,7 @@ h3 {
 }
 
 .date {
-    font-size: 1.45vh;
+    font-size: 0.85vw;
 }
 
 .cards {
@@ -261,18 +260,16 @@ h3 {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    gap: 5vh;
+    gap: 3vw;
 }
-
-.ui.card {}
 
 /* About */
 
 #about {
     padding-top: 15vh;
     padding-bottom: 15vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
     width: 100%;
     background-color: #2c2a2a;
 }
@@ -316,7 +313,7 @@ figcaption {
 
 #aboutText>p {
     color: rgb(219, 219, 219);
-    font-size: 2.3vh;
+    font-size: 1.2vw;
     text-align: end;
     margin: 0;
 }
@@ -357,9 +354,9 @@ figcaption {
 }
 
 .skillText {
-    margin: 0 0 0 1.5vh;
+    margin: 0 0 0 1.5vw;
     padding: 0;
-    font-size: 2.2vh;
+    font-size: 2.2vw;
     font-family: 'A Goblin Appears!';
 }
 
@@ -373,8 +370,8 @@ figcaption {
 #contact {
     padding-top: 15vh;
     padding-bottom: 15vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
     width: 100%;
     background-color: #252424;
 }
@@ -394,13 +391,13 @@ figcaption {
 
 #graphism>h2 {
     margin-bottom: 2vh;
-    margin-left: 8vh;
+    margin-left: 8vw;
 }
 
 #graphism>p {
     color: rgb(219, 219, 219);
-    margin-left: 12vh;
-    font-size: 2.3vh;
+    margin-left: 12vw;
+    font-size: 1.8vw;
 }
 
 #graphismList {
@@ -415,8 +412,8 @@ figcaption {
     margin-top: 8vh;
     padding-top: 10vh;
     padding-bottom: 15vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 #graphismList>h3 {
