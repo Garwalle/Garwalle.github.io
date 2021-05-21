@@ -332,6 +332,12 @@ figcaption {
     cursor: pointer;
 }
 
+#aboutSkills {
+    margin: 0;
+    display: inline-block;
+    width: auto;
+}
+
 /* Contact */
 
 #contact {

@@ -1,9 +1,9 @@
-$(document).ready(function () {
+window.addEventListener('load', function () {
     $(".loader").fadeOut("1000");
     $('body').removeClass('preventFromScrolling');
     scrollShowTitle();
     window.onscroll = function () { scrollShowTitle(); };
-});
+})
 
 function scrollShowTitle() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
