@@ -92,6 +92,4 @@ $(".aboutImgHv").mouseenter(function () {
 $(".aboutImgHv").mouseleave(function () {
     $("#aboutImg").css("box-shadow", "10px 15px 25px 0 rgba(0, 0, 0, .4)");
     $("#aboutImg").css("filter", "grayscale(100%) contrast(120%)");
-    $("#aboutImgFig").css("opacity", "0.4");
-    $("#aboutImgFig").css("padding-right", " 0");
 });

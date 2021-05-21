@@ -19,6 +19,9 @@
     <!-- Font Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Me -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="style/img/ico.ico" />
@@ -57,7 +60,6 @@
 
     <div id="page">
         <section id="home">
-            <div></div>
             <h1>Hello world !</h1>
 
             <!-- Balloon 'is-dark'  -->
@@ -114,7 +116,7 @@
 
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 data-aos="fade-left">Projects</h2>
             <div class="cards">
                 <div class="ui inverted link card" onclick="scrollToTop();">
                     <div class="ui slide masked reveal image">
@@ -235,13 +237,13 @@
 
 
         <section id="about">
-            <h2>About</h2>
+            <h2 data-aos="fade-right">About</h2>
             <header id="aboutHeader">
-                <figure>
+                <figure data-aos="fade-right">
                     <img id="aboutImg" class="aboutImgHv" src="style/img/Martin_irl.JPG" alt="Picture of Martin">
                     <figcaption id="aboutImgFig"><i>Hover me</i></figcaption>
                 </figure>
-                <div id="aboutText">
+                <div id="aboutText" data-aos="fade-left">
                     <h3>Bonjour !</h3>
                     <p>I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me
                         and my <a href="style/pdf/CV-Martin_jeanne.pdf" target="_blank"
@@ -250,55 +252,62 @@
                 </div>
             </header>
 
-            <div>
+            <div data-aos="fade-right">
                 <h3 id="skillsTitle">Skills</h3><i> i practice</i>
             </div>
             <div class="skills">
-                <div class="skill">
+                <div class="skill" data-aos="fade-right">
                     <p class="skillText">HTML & CSS</p>
                     <progress class="nes-progress is-error" value="90" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-left">
                     <p class="skillText">JavaScript</p>
                     <progress class="nes-progress is-warning" value="92" max="100"></progress>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill">
+                <div class="skill" data-aos="fade-right">
                     <p class="skillText">PHP</p>
                     <progress class="nes-progress is-primary" value="78" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-left">
                     <p class="skillText">C#</p>
                     <progress class="nes-progress " value="50" max="100"></progress>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill">
+                <div class="skill" data-aos="fade-right">
                     <p class="skillText">Phyton</p>
                     <progress class="nes-progress is-success" value="40" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-left">
                     <p class="skillText">Java</p>
                     <progress class="nes-progress is-error" value="55" max="100"></progress>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill">
+                <div class="skill" data-aos="fade-right">
                     <p class="skillText">SQL</p>
                     <progress class="nes-progress" value="62" max="100"></progress>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" data-aos="fade-left">
             <h2>Contact</h2>
         </section>
     </div>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({disable: 'mobile'});
+    </script>
+
+    <!-- Me -->
     <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 
