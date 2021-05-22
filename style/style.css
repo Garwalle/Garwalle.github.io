@@ -245,8 +245,8 @@ a {
 /* Projects */
 
 #projects {
-    margin-top: 15vh;
-    padding-top: 15vh;
+    margin-top: 13vh;
+    padding-top: 13vh;
     padding-bottom: 15vh;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -275,8 +275,8 @@ a {
 /* About */
 
 #about {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    padding-top: 13vh;
+    padding-bottom: 13vh;
     padding-left: 5vw;
     padding-right: 5vw;
     width: 100%;
@@ -284,7 +284,7 @@ a {
 }
 
 #about>h2 {
-    margin-bottom: 4.5vh;
+    margin-bottom: 1.8vh;
 }
 
 #aboutHeader {
@@ -380,8 +380,8 @@ figcaption {
 /* Contact */
 
 #contact {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    padding-top: 13vh;
+    padding-bottom: 13vh;
     padding-left: 8vw;
     padding-right: 8vw;
     width: 100%;
@@ -389,7 +389,7 @@ figcaption {
 }
 
 #contact>h2 {
-    margin-bottom: 7vh;
+    margin-bottom: 4vh;
     text-align: end;
 }
 
@@ -416,32 +416,33 @@ figcaption {
 
 #contactMe {
     width: 40%;
-    padding: 2vw;
+    padding: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
     background-color: #3d3838;
     border-top-left-radius: 2%;
     border-bottom-left-radius: 2%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     gap: 1.7vh;
+    border-right: 4px solid rgb(47, 207, 47);
 }
 
 #ContactMail {
-    width: 80%;
+    width: 75%;
     margin-bottom: 2.5vh;
 }
 
 #ContactSendMail {
-    width: 100%;
+    width: 95%;
 }
 
 #ContactSendMail>textarea {
     width: 100%;
-    height: 20vh;
+    height: 14vh;
 }
 
 #contactMe>p {
@@ -452,13 +453,18 @@ figcaption {
 
 /* Footer */
 footer {
-    margin-top: 10vh;
-    padding-bottom: 10vh;
+    margin-top: 5vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 2vh;
+}
+
+footer>p {
+    font-size: 1.5vw;
+
 }
 
 /* Graphism */

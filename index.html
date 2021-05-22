@@ -300,11 +300,11 @@
         <section id="contact">
             <h2 data-aos="fade-left">Contact</h2>
             <div id="contactInfos">
-                <div data-aos="flip-left" data-aos-offset="200" id="coordonate">
+                <div data-aos="zoom-out-right" data-aos-offset="275" id="coordonate">
                     <h3>Martin Jeanne</h3>
                     <p>martinjeanne.dev@gmail.com</p>
                 </div>
-                <form data-aos="fade-left" data-aos-offset="400" id="contactMe" action="mailto:someone@example.com"
+                <form data-aos="fade-left" data-aos-offset="420" id="contactMe" action="mailto:martinjeanne.dev@gmail.com"
                     method="post" enctype="text/plain">
                     <img src="style/img/gluant.gif" width="100vw">
                     <p>Send me a message :</p>
@@ -312,19 +312,18 @@
                         <input type="text" placeholder="Your email" required>
                     </div>
                     <div id="ContactSendMail" class="ui inverted input">
-                        <textarea required>Type your message here !</textarea>
+                        <textarea maxlength="600" required>Type your message here !</textarea>
                     </div>
                     <div>
-                        <button class="ui inverted primary button">Primary</button>
-                        <button class="ui inverted secondary button">Secondary</button>
-                        <button class="ui inverted positive button">Positive</button>
+                        <button type="button" class="ui inverted yellow button" onclick="clearForm();">Clear</button>
+                        <button type="submit" class="ui inverted primary button">Send</button>
                     </div>
                 </form>
             </div>
         </section>
         <footer>
-            <img src="style/img/marioStar.gif" width="100vw">
-            <p>© Martin Jeanne - All right reserved</p>
+            <img src="style/img/marioStar.gif" width="80vw">
+            <p>© Martin Jeanne - All rights reserved</p>
         </footer>
     </div>
 
