@@ -239,17 +239,17 @@
         <section id="about">
             <h2 data-aos="fade-right">About</h2>
             <header id="aboutHeader">
-                <figure data-aos="fade-right">
+                <figure data-aos="fade-right" data-aos-offset="400">
                     <a class="aboutImgHv" href="style/img/Martin_irl.JPG"><img id="aboutImg"
                             src="style/img/Martin_irl-compress.JPG" alt="Picture of Martin"></a>
                     <figcaption id="aboutImgFig"><i>Hover me</i></figcaption>
                 </figure>
                 <div id="aboutText" data-aos="fade-left">
-                    <h3>Bonjour !<img src="style/img/gluant.gif" width="100vw"></h3>
-                    <p>I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me
-                        and my <a href="style/pdf/CV-Martin_jeanne.pdf" target="_blank"
-                            download="CV-Martin_jeanne">CV</a> !</p>
-                    <p>You can also take a look at the skills i pratice the most.</p>
+                    <h3>Bonjour !</h3>
+                    <p>I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me !</p>
+                    <p>I love many things such as computer sience, graphism, and hardware.</p>
+                    <p>My goal would be to work in video game industry, but if not i also really like to code for web.
+                    </p>
                 </div>
             </header>
 
@@ -299,7 +299,33 @@
 
         <section id="contact">
             <h2 data-aos="fade-left">Contact</h2>
+            <div id="contactInfos">
+                <div data-aos="flip-left" data-aos-offset="200" id="coordonate">
+                    <h3>Martin Jeanne</h3>
+                    <p>martinjeanne.dev@gmail.com</p>
+                </div>
+                <form data-aos="fade-left" data-aos-offset="400" id="contactMe" action="mailto:someone@example.com"
+                    method="post" enctype="text/plain">
+                    <img src="style/img/gluant.gif" width="100vw">
+                    <p>Send me a message :</p>
+                    <div id="ContactMail" class="ui inverted input">
+                        <input type="text" placeholder="Your email" required>
+                    </div>
+                    <div id="ContactSendMail" class="ui inverted input">
+                        <textarea required>Type your message here !</textarea>
+                    </div>
+                    <div>
+                        <button class="ui inverted primary button">Primary</button>
+                        <button class="ui inverted secondary button">Secondary</button>
+                        <button class="ui inverted positive button">Positive</button>
+                    </div>
+                </form>
+            </div>
         </section>
+        <footer>
+            <img src="style/img/marioStar.gif" width="100vw">
+            <p>© Martin Jeanne - All right reserved</p>
+        </footer>
     </div>
 
     <!-- AOS -->
