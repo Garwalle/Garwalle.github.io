@@ -22,27 +22,27 @@
 </head>
 
 <body>
-
     <div id="banner">
-        <img id="bgGif" src="style/img/starMoving.gif">
+        <img class="bgGif" id="gif1" src="style/img/starMoving.gif" alt="Background gif n1 with moving stars">
+        <img class="bgGif" id="gif2" src="style/img/starMoving.gif" alt="Background gif n2 with moving stars">
         <div id="bannerImgs">
-            <img class="bannerImg" src="style/img/Martin.png" />
-            <img class="bannerImg" style="margin-top: -20px;" src="style/img/jeanne.png" />
+            <img class="bannerImg" src="style/img/Martin.png" alt="Image that display 'Martin'">
+            <img class="bannerImg" style="margin-top: -20px;" src="style/img/jeanne.png"
+                alt="Image that display 'Jeanne'">
         </div>
 
-        <div id="navbar">
-            <img id="NBImg" onclick="scrollToTop();" src="style/img/martin jeanne.png" />
+        <nav>
+            <img id="NBImg" onclick="scrollToTop();" src="style/img/martin_jeanne.png"
+                alt="Image that display 'Martin Jeanne'">
             <div id="blanckNB"></div>
-            <div id="bannerButtons" style="justify-content: flex-end;">
-                <a class="nes-btn is-error" href="index"><i class="arrow left icon"></i></a>
-            </div>
-        </div>
+            <a class="nes-btn is-error" href="index"><i class="arrow left icon"></i></a>
+        </nav>
     </div>
 
     <div id="page">
         <section id="graphism">
             <h2>Graphism</h2>
-            <p>Some of my graphic creations, from video games industry (especially Minecraft)</p>
+            <p>Some of my graphic creations, from video games industry (especially Minecraft).</p>
             <div id="graphismList">
                 <img src="style/img/graphism/1.png" class="banner">
                 <img src="style/img/graphism/2.jpg" class="logo">

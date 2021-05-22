@@ -13,7 +13,7 @@ function scrollShowTitle() {
         $('#banner').css('height', '8%');
         $('.bannerImg').fadeOut().promise().done(function () {
             $('#blanckNB').css('width', '100%');
-            $('#NBImg').css('width', '15%');
+            $('#NBImg').css('width', '17%');
         });
 
     } else {
