@@ -9,6 +9,7 @@ function scrollShowTitle() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $('#page').css('filter', 'blur(0px)');
         $('.bgGif').css('opacity', '0');
+        $('#bannerImgs').css('margin-top', '0');
         $('.bannerImg').css('width', '0');
         $('#banner').css('height', '8%');
         $('.bannerImg').fadeOut().promise().done(function () {
@@ -22,6 +23,7 @@ function scrollShowTitle() {
             $('#banner').css('height', '45%');
             $('#page').css('filter', 'blur(4px)');
             $('.bgGif').css('opacity', '0.2');
+            $('#bannerImgs').css('margin-top', '5vh');
             $('.bannerImg').fadeIn();
             $('.bannerImg').css('width', '70%');
         });
