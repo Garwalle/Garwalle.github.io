@@ -345,8 +345,12 @@ figcaption {
 }
 
 #skillsTitle {
-    display: inline-block;
+
     margin-bottom: 6vh;
+}
+
+#skillsTitle>h3 {
+    display: inline-block;
 }
 
 .skills {
