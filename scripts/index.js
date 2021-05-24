@@ -14,12 +14,14 @@ function scrollShowTitle() {
         $('#banner').css('height', '8%');
         $('.bannerImg').fadeOut().promise().done(function () {
             $('#blanckNB').css('width', '100%');
+            $('#bannerButtons').css('gap', '0.8vw');
             $('#NBImg').css('width', '17%');
         });
 
     } else {
         $('#NBImg').css('width', '0%');
         $('#blanckNB').css('width', '0').promise().done(function () {
+            $('#bannerButtons').css('gap', '4vw');
             $('#banner').css('height', '45%');
             $('#page').css('filter', 'blur(4px)');
             $('.bgGif').css('opacity', '0.2');

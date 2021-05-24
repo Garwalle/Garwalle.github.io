@@ -138,8 +138,8 @@ nav {
 }
 
 #bannerButtons {
-    width: 50vw;
     display: flex;
+    gap: 0.8vw;
     justify-content: space-between;
     font-family: 'A Goblin Appears!';
     transition: 0.4s;
@@ -163,7 +163,6 @@ dialog {
 #blanckNB {
     width: 100%;
     transition: 1.5s;
-    text-align: center;
 }
 
 #page {
