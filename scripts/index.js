@@ -40,7 +40,13 @@ function openInNewTab(url) {
     window.open(url, '_blank').focus();
 }
 
+
 var nbMsg = 0;
+var projects = ['p', 'projects', 'project', 'see your projects'];
+var skills = ['s', 'skills', 'skill', 'show me your skills !'];
+var about = ['a', 'about', 'project', 'show information about you'];
+var contact = ['c', 'contact', 'i want to contact you'];
+
 $('#userMsg').submit(function () {
     if (nbMsg >= 20) {
         document.getElementById('dialog-rounded').showModal();
@@ -58,26 +64,19 @@ $('#userMsg').submit(function () {
     let p = document.createElement('p');
 
     let toSCroll;
-    let pTEXT;
+    let pTEXT = msg;
 
-    switch (msg) {
-        case 'p': case 'projects': case 'project': case 'see your projects':
-            pTEXT = msg;
-            toSCroll = 'projects';
-            break;
-        case 'a': case 'about': case 'show information about you !':
-            pTEXT = msg;
-            toSCroll = 'about';
-            break;
-        case 'c': case 'contact': case 'i want to contact you':
-            pTEXT = msg;
-            toSCroll = 'contact';
-            break;
-        default:
-            pTEXT = 'Unrecognized answer !';
-    }
+    if (projects.includes(msg)) toSCroll = 'projects';
+
+    else if (skills.includes(msg)) toSCroll = 'skills';
+
+    else if (about.includes(msg)) toSCroll = 'about';
+
+    else if (contact.includes(msg)) toSCroll = 'contact';
+
+    else pTEXT = 'Unrecognized answer !';
+
     p.innerHTML = pTEXT;
-
     if (nbMsg > 1) document.getElementById('msg' + (nbMsg - 1)).after(div);
     else document.getElementById('messageRBallons').appendChild(div);
     document.getElementById('msg' + nbMsg).appendChild(p);

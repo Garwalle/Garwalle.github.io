@@ -45,8 +45,8 @@
                 alt="Image that display 'Martin Jeanne'">
             <div id="blanckNB"></div>
             <div id="bannerButtons">
-                <a class="nes-btn is-error" href="#home">Home</a>
-                <a class="nes-btn is-success" href="#projects">Projects</a>
+                <a class="nes-btn is-error" href="#projects">Projects</a>
+                <a class="nes-btn is-success" href="#skills">Skills</a>
                 <a class="nes-btn is-primary" href="#about">About</a>
                 <a class="nes-btn is-warning" style="color: white;" href="#contact">Contact</a>
             </div>
@@ -77,8 +77,9 @@
                             </div>
                             <div class="nes-balloon from-left is-dark">
                                 <p>What do you desire ?<br>
-                                    "See your <span class="ui green text">projects</span>"<br>
-                                    "Show information <span class="ui blue text">about</span> you !"<br>
+                                    "See your <span class="ui red text">projects</span>"<br>
+                                    "Show me your <span class="ui green text">skills</span> !"<br>
+                                    "Tell me <span class="ui blue text">about</span> you"<br>
                                     "I want to <span class="ui yellow text">contact</span> you"<br>
                                 </p>
                             </div>
@@ -116,7 +117,7 @@
 
 
         <section id="projects">
-            <h2 data-aos="fade-left">Projects</h2>
+            <h2 data-aos="fade-right">Projects</h2>
             <div class="cards">
                 <div class="ui inverted link card" onclick="scrollToTop();">
                     <div class="ui slide masked reveal image">
@@ -170,7 +171,8 @@
                     <div class="extra content"><i class="users icon"></i>3 Members</div>
                 </div>
 
-                <div class="ui inverted link card" onclick="openInNewTab('https://martinjeanne-chinook.herokuapp.com/');">
+                <div class="ui inverted link card"
+                    onclick="openInNewTab('https://martinjeanne-chinook.herokuapp.com/');">
                     <div class="ui slide masked reveal image">
                         <img src="style/img/projects/chinook.png" class="visible content">
                         <img src="style/img/icon/html-css-js.png-php.png" class="hidden content">
@@ -236,25 +238,9 @@
         </section>
 
 
-        <section id="about">
-            <h2 data-aos="fade-right">About</h2>
-            <header id="aboutHeader">
-                <figure data-aos="fade-right" data-aos-offset="400">
-                    <a class="aboutImgHv" href="style/img/Martin_irl.JPG"><img id="aboutImg"
-                            src="style/img/Martin_irl-compress.JPG" alt="Picture of Martin"></a>
-                    <figcaption id="aboutImgFig"><i>Hover me</i></figcaption>
-                </figure>
-                <div id="aboutText" data-aos="fade-left">
-                    <h3>Bonjour !</h3>
-                    <p>I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me !</p>
-                    <p>I love many things such as computer sience, graphism, and hardware.</p>
-                    <p>My goal would be to work in video game industry, but if not i also really like to code for web.
-                    </p>
-                </div>
-            </header>
-
-            <div data-aos="fade-right" id="skillsTitle">
-                <h3 >Skills</h3><i> i practice</i>
+        <section id="skills">
+            <div data-aos="fade-left" id="skillsTitle">
+                <h2>Skills</h2><i> i practice</i>
             </div>
             <div class="skills">
                 <div class="skill" data-aos="fade-right">
@@ -297,6 +283,26 @@
             </div>
         </section>
 
+
+        <section id="about">
+            <h2 data-aos="fade-right">About</h2>
+            <header id="aboutHeader">
+                <figure data-aos="fade-right" data-aos-offset="400">
+                    <a class="aboutImgHv" href="style/img/Martin_irl.JPG"><img id="aboutImg"
+                            src="style/img/Martin_irl-compress.JPG" alt="Picture of Martin"></a>
+                    <figcaption id="aboutImgFig"><i>Hover me</i></figcaption>
+                </figure>
+                <div id="aboutText" data-aos="fade-left">
+                    <h3>Bonjour !</h3>
+                    <p>I'm Martin, 21 years old, here is a <b class="aboutImgHv">picture</b> of me !</p>
+                    <p>I love many things such as computer sience, graphism, and hardware.</p>
+                    <p>My goal would be to work in video game industry, but if not i also really like to code for web.
+                    </p>
+                </div>
+            </header>
+        </section>
+
+
         <section id="contact">
             <h2 data-aos="fade-left">Contact</h2>
             <div id="contactInfos">
@@ -304,7 +310,8 @@
                     <h3>Martin Jeanne</h3>
                     <p>martinjeanne.dev@gmail.com</p>
                 </div>
-                <form data-aos="fade-left" data-aos-offset="420" id="contactMe" action="https://formspree.io/f/xoqyeokv" method="POST">
+                <form data-aos="fade-left" data-aos-offset="420" id="contactMe" action="https://formspree.io/f/xoqyeokv"
+                    method="POST">
                     <img src="style/img/gluant.gif" width="100vw">
                     <p>Send me a message :</p>
                     <div id="ContactMail" class="ui inverted input">
@@ -320,6 +327,8 @@
                 </form>
             </div>
         </section>
+
+
         <footer>
             <img src="style/img/marioStar.gif" width="80vw">
             <p>© Martin Jeanne - all rights reserved</p>
