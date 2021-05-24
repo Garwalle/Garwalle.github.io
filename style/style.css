@@ -195,6 +195,8 @@ a {
     cursor: pointer;
 }
 
+/* Home */
+
 #home {
     margin-top: 25vh;
     padding-top: 6vh;
@@ -243,6 +245,12 @@ a {
 .nes-balloon.from-right.is-dark {
     margin-bottom: 3vh;
 }
+
+#pA { color: rgb(250, 67, 67); }
+#sA { color: rgb(147, 212, 81); }
+#aA { color: rgb(67, 183, 250); }
+#cA { color: rgb(250, 247, 67); }
+
 
 /* Projects */
 
@@ -444,7 +452,7 @@ figcaption {
     border-bottom-left-radius: 2%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     gap: 1.7vh;
-    border-right: 4px solid rgb(47, 207, 47);
+    border-right: 4px solid rgb(147, 212, 81);
 }
 
 #ContactMail {

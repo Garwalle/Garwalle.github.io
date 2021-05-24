@@ -36,6 +36,10 @@ function scrollToTop() {
     window.scrollTo({ top: 0 });
 }
 
+function scrollIn(toSCroll) {
+    document.getElementById(toSCroll).scrollIntoView();
+}
+
 function openInNewTab(url) {
     window.open(url, '_blank').focus();
 }
@@ -81,9 +85,11 @@ $('#userMsg').submit(function () {
     else document.getElementById('messageRBallons').appendChild(div);
     document.getElementById('msg' + nbMsg).appendChild(p);
     document.getElementById('msgList').scrollTop = document.getElementById('msgList').scrollHeight;
-    if (toSCroll) document.getElementById(toSCroll).scrollIntoView();
+    if (toSCroll) scrollIn(toSCroll);
     return false;
 });
+
+
 
 $('.aboutImgHv').mouseenter(function () {
     $('#aboutImg').css('box-shadow', '1px 1px 10px 0 rgba(0, 0, 0, .1)');
