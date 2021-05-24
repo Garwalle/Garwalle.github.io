@@ -71,13 +71,9 @@ $('#userMsg').submit(function () {
     let pTEXT = msg;
 
     if (projects.includes(msg)) toSCroll = 'projects';
-
     else if (skills.includes(msg)) toSCroll = 'skills';
-
     else if (about.includes(msg)) toSCroll = 'about';
-
     else if (contact.includes(msg)) toSCroll = 'contact';
-
     else pTEXT = 'Unrecognized answer !';
 
     p.innerHTML = pTEXT;

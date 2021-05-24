@@ -293,12 +293,27 @@ a {
     background-color: #2c2a2a;
 }
 
-#skillsTitle {
+#skills>h2 {
     margin-bottom: 6vh;
     text-align: end;
 }
 
-#skillsTitle>h2 {
+#skills>.h3Left {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+#skills>.h3Left>h3 {
+    display: inline-block;
+}
+
+#skills>.h3Right {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: end;
+}
+
+#skills>.h3Right>h3 {
     display: inline-block;
 }
 
@@ -324,7 +339,7 @@ a {
 .skillText {
     margin: 0 0 0 1.5vw;
     padding: 0;
-    font-size: 1.45vw;
+    font-size: 1.3vw;
     font-family: 'A Goblin Appears!';
 }
 
