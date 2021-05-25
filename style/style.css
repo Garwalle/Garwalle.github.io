@@ -399,7 +399,7 @@ a {
     width: 100%;
     margin-top: 13vh;
     box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .4);
-    transition: 0.5s;
+    transition: 1s;
     filter: grayscale(100%) contrast(120%);
 }
 
