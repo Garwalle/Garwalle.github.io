@@ -622,3 +622,13 @@ footer>p {
 .logo {
     width: 30%;
 }
+
+/* 404 */
+#error404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
