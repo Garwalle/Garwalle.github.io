@@ -299,8 +299,8 @@ a {
 }
 
 #skills>.h3Left {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 }
 
 #skills>.h3Left>h3 {
@@ -308,8 +308,8 @@ a {
 }
 
 #skills>.h3Right {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
     text-align: end;
 }
 
@@ -346,6 +346,19 @@ a {
 .nes-progress {
     width: 100%;
     height: 3.3vh;
+}
+
+.imgsFlex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.imgFlex {
+    width: 20%;
 }
 
 /* About */
