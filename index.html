@@ -165,7 +165,7 @@
                     <div class="content">
                         <a class="header">Reservation</a>
                         <div class="meta"><span class="date">2020</span></div>
-                        <div class="description">The 1nd project did in second year of BTS SIO, uses Spring Boot.
+                        <div class="description">The 1st project did in second year of BTS SIO, uses Spring Boot.
                         </div>
                     </div>
                     <div class="extra content"><i class="users icon"></i>3 Members</div>
@@ -180,7 +180,8 @@
                     <div class="content">
                         <a class="header">Chinook</a>
                         <div class="meta"><span class="date">2020</span></div>
-                        <div class="description">A school exercise that i think i did well.</div>
+                        <div class="description">A school exercise that i think i did well, using PHP with PDO to
+                            communicate with a DBB.</div>
                     </div>
                 </div>
 
@@ -217,7 +218,8 @@
                     <div class="content">
                         <a class="header">Internship about Arduino</a>
                         <div class="meta"><span class="date">2018</span></div>
-                        <div class="description">First stage of my BTS SIO, where i worked on Arduino.</div>
+                        <div class="description">First stage of my BTS SIO, where i worked on Arduino in a laboratory.
+                        </div>
                     </div>
                 </div>
 
@@ -246,40 +248,43 @@
             </div>
 
             <div class="skills">
-                <div class="skill" data-aos="fade-right">
+                <div id="htmlCss" class="skill" data-aos="fade-right">
                     <p class="skillText">HTML & CSS</p>
-                    <progress class="nes-progress is-error" value="90" max="100"></progress>
+                    <progress class="nes-progress" value="90" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill" data-aos="fade-left">
+                <div id="js" class="skill" data-aos="fade-left">
                     <p class="skillText">JavaScript</p>
-                    <progress class="nes-progress is-warning" value="92" max="100"></progress>
+                    <progress class="nes-progress" value="92" max="100"></progress>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill" data-aos="fade-right">
+                <div id="php" class="skill" data-aos="fade-right">
                     <p class="skillText">PHP</p>
-                    <progress class="nes-progress is-primary" value="78" max="100"></progress>
+                    <progress class="nes-progress" value="78" max="100"></progress>
                 </div>
                 <div class="redBar"></div>
-                <div class="skill" data-aos="fade-left">
-                    <p class="skillText">C#</p>
-                    <progress class="nes-progress " value="50" max="100"></progress>
-                </div>
-            </div>
-            <div class="skills">
-                <div class="skill" data-aos="fade-right">
-                    <p class="skillText">Phyton</p>
-                    <progress class="nes-progress is-success" value="40" max="100"></progress>
-                </div>
-                <div class="redBar"></div>
-                <div class="skill" data-aos="fade-left">
+                <div id="java" class="skill" data-aos="fade-left">
                     <p class="skillText">Java</p>
-                    <progress class="nes-progress is-error" value="55" max="100"></progress>
+                    <progress class="nes-progress" value="53" max="100"></progress>
                 </div>
+
             </div>
             <div class="skills">
-                <div class="skill" data-aos="fade-right">
+                <div id="Csharp" class="skill" data-aos="fade-left">
+                    <p class="skillText">C#</p>
+                    <progress class="nes-progress" value="48" max="100"></progress>
+                </div>
+
+                <div class="redBar"></div>
+                <div id="python" class="skill" data-aos="fade-right">
+                    <p class="skillText">Phyton</p>
+                    <progress class="nes-progress" value="73" max="100"></progress>
+                </div>
+
+            </div>
+            <div class="skills">
+                <div id="sql" class="skill" data-aos="fade-right">
                     <p class="skillText">SQL</p>
                     <progress class="nes-progress" value="80" max="100"></progress>
                 </div>
@@ -290,14 +295,12 @@
             <div data-aos="fade-right" data-aos-offset="200" class="imgsFlex" id="framework">
                 <img data-aos="fade-in" src="style/img/icon/emberjs.png" class="imgFlex" alt="EmberJs logo">
                 <img data-aos="fade-in" src="style/img/icon/vuejs.jpg" class="imgFlex" alt="VueJs logo">
-                <img data-aos="fade-in" src="style/img/icon/ubiquity.png" class="imgFlex" alt="Ubiquity logo"> 
+                <img data-aos="fade-in" src="style/img/icon/ubiquity.png" class="imgFlex" alt="Ubiquity logo">
                 <img data-aos="fade-in" src="style/img/icon/spring-boot.png" class="imgFlex" alt="Spring Boot logo">
                 <div class="imgFlex" style="visibility: hidden;"></div>
                 <div class="imgFlex" style="visibility: hidden;"></div>
                 <img data-aos="fade-in" src="style/img/icon/semanticui.png" class="imgFlex" alt="Semantic ui logo">
                 <img data-aos="fade-in" src="style/img/icon/ness.css.jpg" class="imgFlex" alt="ness.css logo">
-                
-                     
             </div>
 
             <div data-aos="fade-right" class="h3Left">
@@ -346,7 +349,8 @@
                         <input type="text" name="email" placeholder="Your email" required>
                     </div>
                     <div id="ContactSendMail" class="ui inverted input">
-                        <textarea maxlength="600" name="message" placeholder="Type your message here !" required></textarea>
+                        <textarea maxlength="600" name="message" placeholder="Type your message here !"
+                            required></textarea>
                     </div>
                     <div>
                         <button type="button" class="ui inverted yellow button" onclick="clearForm();">Clear</button>

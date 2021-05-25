@@ -44,7 +44,6 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    
 }
 
 html {
@@ -246,11 +245,21 @@ a {
     margin-bottom: 3vh;
 }
 
-#pA { color: rgb(250, 67, 67); }
-#sA { color: rgb(147, 212, 81); }
-#aA { color: rgb(67, 183, 250); }
-#cA { color: rgb(250, 247, 67); }
+#pA {
+    color: rgb(250, 67, 67);
+}
 
+#sA {
+    color: rgb(147, 212, 81);
+}
+
+#aA {
+    color: rgb(67, 183, 250);
+}
+
+#cA {
+    color: rgb(250, 247, 67);
+}
 
 /* Projects */
 
@@ -280,7 +289,6 @@ a {
     align-content: center;
     gap: 2vw;
 }
-
 
 /* Skills */
 
@@ -329,6 +337,34 @@ a {
     height: 15vh;
 }
 
+#htmlCss>progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, #ff6040, #2baaff);
+}
+
+#js>progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, #ffd557, #e4a126);
+}
+
+#php>progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, #aeb2d5, #777bb3);
+}
+
+#java>progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, #ff6660, #c01a14);
+}
+
+#Csharp>progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, #ca49fd, #8724c0);
+}
+
+#python>progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, #3771a2, #ffd141);
+}
+
+#sql>progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, #444444, #202020);
+}
+
 .redBar {
     width: 3px;
     height: 15vh;
@@ -364,15 +400,15 @@ a {
 #framework {
     border-left: 3px solid rgb(147, 212, 81);
     box-shadow: -8px 0 8px -6px rgba(0, 0, 0, 0.8);
-    padding-left: 5vh;
-    padding-right:  3vh;
+    padding-left: 7vh;
+    padding-right: 3vh;
 }
 
 #libapi {
     border-right: 3px solid rgb(81, 94, 212);
     box-shadow: 8px 0 8px -6px rgba(0, 0, 0, 0.8);
     padding-left: 3vh;
-    padding-right:  5vh;
+    padding-right:75vh;
 }
 
 /* About */
@@ -518,6 +554,7 @@ figcaption {
 }
 
 /* Footer */
+
 footer {
     margin-top: 3vh;
     padding-top: 5vh;
