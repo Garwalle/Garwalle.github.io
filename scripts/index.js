@@ -101,5 +101,5 @@ $('.aboutImgHv').mouseleave(function () {
 
 function clearForm() {
     $('input').val('');
-    $('textarea').val('Type your message here !');
+    $('textarea').val('');
 }
