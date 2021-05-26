@@ -391,6 +391,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 2vw;
+    margin-bottom: 15vh;
 }
 
 .imgFlex {
@@ -404,11 +405,18 @@ a {
     padding-right: 3vh;
 }
 
-#libapi {
-    border-right: 3px solid rgb(81, 94, 212);
+#software {
+    border-right: 3px solid rgb(250, 247, 67);
     box-shadow: 8px 0 8px -6px rgba(0, 0, 0, 0.8);
     padding-left: 3vh;
-    padding-right:75vh;
+    padding-right:7vh;
+}
+
+#libapi {
+    border-left: 3px solid rgb(81, 94, 212);
+    box-shadow: -8px 0 8px -6px rgba(0, 0, 0, 0.8);
+    padding-left: 7vh;
+    padding-right: 3vh;
 }
 
 /* About */
