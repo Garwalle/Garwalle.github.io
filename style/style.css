@@ -190,6 +190,11 @@ h3 {
     font-family: 'Josefin Sans';
 }
 
+h4 {
+    font-size: 3vw;
+    font-family: 'Josefin Sans';
+}
+
 a {
     cursor: pointer;
 }
@@ -417,6 +422,18 @@ a {
     box-shadow: -8px 0 8px -6px rgba(0, 0, 0, 0.8);
     padding-left: 7vh;
     padding-right: 3vh;
+}
+
+#veille {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#veille>p {
+    font-size: 1.3vw;
 }
 
 /* About */
