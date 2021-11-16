@@ -1,5 +1,5 @@
 # Garwalle.github.io
 
 This repository is for my portfolio,
-Have a nice read !
+have a nice read !
 Martin
