@@ -1,5 +1,4 @@
 # Garwalle.github.io
 
-This repository is for my portfolio,
-have a nice read !
-Martin
+This repository my old portfolio.  
+Made from scratch with vanilla HTML&CSS and JavaScript
